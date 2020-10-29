@@ -1,0 +1,153 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 de out de 2020, 12:47:05
+    Author     : Joel Sousa
+*/
+@font-face{
+    font-family: marvel;
+    src:url("marvelregular.ttf");
+}
+
+@font-face{
+    font-family: american;
+    src:url("american.otf");
+}
+
+@font-face{
+    font-family: HeroesLegend;
+    src:url("HeroesLegend.ttf");
+}
+
+*{
+    font-family: Arial;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    background: black;
+}
+
+header{
+    height: 200px;
+    background: red;
+    background-image:url("../images/headerMarvel.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1{
+    color:azure;
+    font-family: american;
+    padding-top: 50px; 
+    text-align: center;
+    font-size:85px;
+    text-shadow:2px 2px 4px black;
+}
+
+nav{
+    text-align: center
+}
+
+ul{
+    list-style-type: nome;
+    margin-top:30px;
+    padding: 0;
+}
+
+li{
+    display:inline;
+    margin-top: 50px;
+}
+
+li a{
+    font-family: american;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding:20px; 
+}
+
+section{
+    width:70%;
+    float:left;
+    color:white;
+}
+
+section h1{
+    margin: 20px;
+    left: 0;
+    font-family: american;
+}
+
+article{
+    width: 70%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid #CCCCCC; 
+}
+
+article div{
+    font-family: marvel;
+}
+
+article h1{
+    font-size: 50px;
+}
+
+article img{
+    width: 150px;
+    height: 200px;
+    float: right;
+    top: 0;
+    left: 0;
+    position: relative;
+    object-fit: cover;
+}
+
+article a{
+    color: red;
+    font-family: american;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
